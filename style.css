@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+:root {
+    --first: rgba(68, 88, 119, 1);
+    --second: rgba(146, 204, 206, 1);
+    --third: rgba(49, 52, 61, 1);
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: var(--third);
+}
+header h1{
+    color:var(--third);
+    background-color: var(--second);
+    padding:5px;
+    font-size: 4vw;
+}
+nav{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    color: var(--second);
+    background-image: linear-gradient(270deg, var(--second) 0%, var(--second) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition:all 0.25s ease-in;
+    font-size: 1.4rem;
+
+}
+
+nav a:hover{
+    background-size: 100% 100%;
+    color: var(--primary);
+}
+/* Begin Content */
+
+h2{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#about{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    border-right: solid red 3px;
+}
+#work{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    border-right: solid red 3px;
+
+}
+#work img{
+    display: block;
+    max-width: 50%; 
+}
+
+
+#contact{
+    border-bottom:solid red 5px;
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    
+}
+
+main #work #images{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+footer h3{
+    display:flex;
+    text-align: center;
+}
